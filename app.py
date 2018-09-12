@@ -41,7 +41,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
         return "Hello from Python!"
-
+'''
 @app.route('/webhook', methods=['POST'])
 def webhook():
     req = request.get_json(silent=True, force=True)
@@ -157,7 +157,7 @@ def static_reply():
     r.headers['Content-Type'] = 'application/json'
     return r
 
-
+'''
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
